@@ -1,1 +1,14 @@
-spring.application.name=java-spring-boot-erudio
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/spring_boot?useTimezone=true&serverTimezone=UTC
+    username: root
+    password: password123
+  jpa:
+    hibernate:
+      ddl-auto: update
+    #properties:
+    #  hibernate:
+    #    dialect: org.hibernate.dialect.MySQLDialect
+    show_sql: false
+    open-in-view: false
